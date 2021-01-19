@@ -30,7 +30,7 @@ public class DBConfiguration {
     @Profile("prod")
     @Bean
     public String productionDatabaseConnection(){
-        System.out.println("DB connection for DEV -H2");
+        System.out.println("DB connection for Production - MySQL");
         System.out.println(driverClassName);
         System.out.println(url);
         return "DB Connection to MYSQL_PROD - production instance";
